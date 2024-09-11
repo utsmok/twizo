@@ -1,70 +1,95 @@
-# ZoteroPortable
-Zotero in PortableApps.com Format
+# Twizo
 
-Read in other langages: [Français 🇫🇷](README.fr.md), [English 🇬🇧](README.md)  
-  
-Since ZoteroPortable is now an official PortableApp, you should download ZoteroPortable from [PortableApps™](https://portableapps.com/apps/office/zotero-portable). This Github repo is for development only.
-  
-Why?
------
-With Mozilla switching to webextensions, Zotero had to adapt: the developers dropped support of the legacy extension for Firefox, and focused their efforts on Zotero Standalone: when there was two programs, Zotero is now unified (from version 5 onwards).  
-Unfortunately, the portableapp created by [orschiro](https://portableapps.com/node/36565) is out of date, as it's based on version 4, and not fully portable if you update it to 5, as it creates Zotero's profile and store user data in %appdata%\Zotero.  
-  
-With my version, Zotero is portable: you can install it even if you don't have admin rights, you can launch it from a usb key, there's nothing writen in Windows registry, and no traces (folders, files...) are left behind.  
-This version of Zotero is not officially endorsed by Zotero Team. [Do not expect official support for portable Zotero issues](https://forums.zotero.org/discussion/64050/5-0-portable-zotero).
-  
-Note that I also made a [Juris-M](https://juris-m.github.io/) Portable, available [here](https://github.com/pedrom34/JurisMPortable)!
-  
-How to use:
------
-- Download latest [release here](https://portableapps.com/apps/office/zotero-portable).  
-- Unpack Zotero by launching installer and selecting target folder (it can be an USB Key or a folder on your desktop...)
-- Install [Zotero Connector](https://www.zotero.org/download/) in your browser (I personnaly use [FirefoxPortable](https://portableapps.com/apps/internet/firefox_portable/localization))
+*Twizo* is a ready-to-use version of *Zotero*, specifically made for usage by students & employees of the *University of Twente*. It is based on the portable version of *Zotero*: this means users can install and update *Twizo* by downloading & running the launcher, and select a location for the app. Twizo will work regardless of other settings. It's even possible to install *Twizo* on a USB-stick to make it even more portable!
 
-Or better: use [PortableApps platform](https://portableapps.com/download) and install Zotero from the app store!
-  
-Notes on release:
------
-For official changelog of Zotero, please see [here](https://www.zotero.org/support/changelog).  
-  
-Zotero Portable is now an [official](https://portableapps.com/news/2022-04-12--zotero-portable-6.0.4-released) PortableApps.com™ app !
-  
-Updating:
------
-To update Zotero, I recommend using the [PortableApps platform](https://portableapps.com/download). The updates are automatic, and your data won't be affected, only the program will be updated.
-  
-However this Zotero version still contains original Zotero Update module: if you check for updates, Zotero will update:  
-- Click on Help > Check for updates in Zotero.  
->![screenshot1](https://user-images.githubusercontent.com/21216829/34518372-44033688-f07f-11e7-999d-d29413d21207.png)  
-  
-- Click on Update Zotero, wait for download.  
->![screenshot2](https://i.imgur.com/bih4XXl.png)
-  
-- Click on Restart.  
->![screenshot3](https://i.imgur.com/DBuC3vf.png)
-  
-Update is installed.  
-  
-Note that updating Zotero this way will prevent you to get the modifications I made to the portable app (modifications of ini files related to the portablization for instance).  
-  
-SmartScreen Filter:
------
-Windows 10 may have problems with installing or launching Zotero Portable. If this happens to you, it is often possible to tell Windows that you still want to run the program. To do this, you first need to trust me. Then click on Additional information:  
->![screenshot4](https://i.imgur.com/CY8S5Hb.png)  
-  
-And then on Run anyway:  
->![screenshot5](https://i.imgur.com/7kOC96A.png)  
-  
-However, some organizations block this workaround (see [#20](https://github.com/pedrom34/ZoteroPortable/issues/20) for more info).
-If you still want to use ZoteroPortable, one solution is to check "unblock" option in the file properties: see [this comment from AndhikaWB](https://github.com/pedrom34/ZoteroPortable/issues/20#issuecomment-854317929).  
-  
-Another solution is to use the [official PortableApps.org platform](https://portableapps.com/download) and install Zotero from the app store.
-  
-## Custom profile folder:
+Twizo is currently only available for Windows (7 and later). We are looking into making versions available for macOS and/or Linux. 
 
-Some users want to use a custom profile folder (see [#24](https://github.com/pedrom34/ZoteroPortable-dev-repo/issues/24)). This is possible with Zotero, but with ZoteroPortable, this possibility is limited by the ZoteroPortable.ini file.  
-I don't recommend changing this file. However, if you know what you are doing, you can modify the line [3](https://github.com/pedrom34/ZoteroPortable-dev-repo/blob/fbfa5a9cdebdf48e15c26f8f06af259c722456f7/App/AppInfo/Launcher/ZoteroPortable.ini#L3) in the ZoteroPortable.ini file to specify the folder of your choice.
+Twizo was made & developed by [Samuel Mok, information specialist @ university of twente](s.mok@utwente.nl). 
 
-Versions history:
-----
-[See here](changelog.md).
+Install
+------------
+- Download the latest [release](link-to-come).  
+- Unpack Twizo by launching the installer to extract Twizo to a target folder (it can be an USB Key, your desktop, anywhere else...)
+- Run Twizo by going to the selected folder and opening Twizo.exe
+- Proceed with the initial setup as outlined in the next section below.
+  
+> [!TIP]
+> Is the screen below preventing you from installing Twizo?
+> ![image](https://github.com/user-attachments/assets/f64cf75b-ca12-415c-ae26-d92ecf9ec72b)
+> Then right-click the file you just downloaded (e.g. twizo-launcher-0.3.exe in your Downloads folder) and select 'Properties'.
+> At the bottom of the screen, find the 'Unblock' option, and click it so it's checked ✅:
+> ![image](https://github.com/user-attachments/assets/acde229b-ac81-44c7-8a7b-78c56be28a52)
+> You can now run the launcher and proceed.
+
+
+Initial Setup
+------------------
+While Twizo aims to provide a plug-and-play solution, there are a few things the user will need to set up themselves when running Twizo for the first time.
+
+1. Connect to your browser
+2. Connect to your word processor
+3. Set up metadata cloud syncing
+4. Set up files cloud syncing
+
+### 1. Connect your browser to Twizo
+The browser connector lets you add items to your library straight from the web, including metadata and PDFs. This is the main way to add items to Twizo, and an essential part of using Twizo efficiently. 
+Download the [Zotero Connector from the download page on zotero.org](https://www.zotero.org/download/) to get the most recent link for your browser. 
+If you'd like a direct link, here they are for the most popular browsers (last update: 11 sept 2024): 
+- [Chrome](https://chrome.google.com/webstore/detail/ekhagklcjbdpajgpjgmbionohlpdbjgc)
+- [Firefox](https://www.zotero.org/download/connector/dl?browser=firefox&version=5.0.144)
+- [Edge](https://microsoftedge.microsoft.com/addons/detail/nmhdhpibnnopknkmonacoephklnflpho).
+
+Note that the connector only works when Zotero is currently running.
+
+### 2. Connect your word processor to Twizo
+No matter what you use to write, there is always a method to integrate Twizo with your prefered software to enable easy & correct citations. 
+
+#### 2.a Integration with Word and/or LibreOffice
+When you install Twizo and run it for the first time, it will automatically install the connector for Word & LibreOffice, if any of them are installed on your system. You should see a new *Zotero* tab in Word if this is successful:
+![image](https://github.com/user-attachments/assets/150affb6-32f7-48ad-a2f9-511d7f3ec969)
+
+If you do not see the Zotero tab in word, try reinstalling by first closing Word, then open the Settings menu in Twizo (Edit -> Settings while having Twizo open) and 1. go to Cite, 2. scroll down to Word Processors and click Install Microsoft Word Add-in.
+![image](https://github.com/user-attachments/assets/3ce105f5-b3c0-47a5-a41f-57ef41ad7090)
+
+#### 2.b Integration with Overleaf
+There are multiple ways to connect Twizo/Zotero with Overleaf. Twizo comes pre-installed with the Better BibTeX plugin which enables some additional options. The instructions below describe the recommended way to connect Twizo with Overleaf. Other methods are linked below, should you prefer a different route. 
+
+> [!CAUTION]
+> Instructions and links to come
+
+#### 2.c Integration with Google Docs
+This is easy: just install the browser connector (see 1.): this also includes the Google Docs connector. 
+
+#### 2.d Integration with other writing software
+There are many more possibilities and we can't cover them all, but if you use something else to write with you're probably used to figure things out yourself. Here are some links that might get you on the right track:
+[Connect using Better BibTeX](https://retorque.re/zotero-better-bibtex/citing/cayw/): explicit links for vim, emacs, vscode, markdown, greasemonkey... but also generic guides on using [api calls / curl / etc](https://retorque.re/zotero-better-bibtex/exporting/pull/index.html) for your own applications
+[VSCode plugin](https://marketplace.visualstudio.com/items?itemName=mblode.zotero)
+[Obsidian plugin](https://github.com/mgmeyers/obsidian-zotero-integration)
+
+### Metadata cloud syncing
+use zotero account
+
+### Files cloud syncing
+setup filesynced folder, update settings
+
+Update
+---------
+To update Twizo, just repeat the installation steps, selecting the same target folder. This should keep all of your settings and modifications -- but we recommend creating a backup of your Twizo folder first, just in case. 
+> [!CAUTION]
+> Do not use the built-in update function (Zotero -> Help -> Check for Updates), as this will replace Twizo and ZoteroPortable modifications with the original Zotero application. 
+
+
+Modifying Twizo
+--------------
+You can use the various setting menus in Twizo to change how things work. See the **manual (link to come)** for more details. If you want to modify things that aren't found in the settings, you will need to dive into the configuration files. This is also how all modifications were done to make Twizo from the ZoteroPortable base. A detailed overview of changes & which files to modify can be found in the **advanced guide (link to come)**. 
+
+Any further modifications fall outside of the scope of Twizo: then I'd suggest starting from the [ZoteroPortable repo](https://github.com/pedrom34/ZoteroPortable-dev-repo/) or the [main Zotero repo](https://github.com/zotero/zotero).
+
+Twizo's lineage
+---------------------------------------------------------------------------
+This repo is a fork of [Zotero in PortableApps.com Format](https://github.com/pedrom34/ZoteroPortable-dev-repo/).
+For the original version, download ZoteroPortable from [PortableApps™](https://portableapps.com/apps/office/zotero-portable). This repo contains a version that includes certain settings, plugins, and styling options specific for the University of Twente. 
+
+This version of Zotero is not officially endorsed by Zotero Team. [Do not expect official support for portable Zotero issues](https://forums.zotero.org/discussion/64050/5-0-portable-zotero). For official changelog of Zotero, please see [Zotero's changelog](https://www.zotero.org/support/changelog).  
+Similarly, any modifications made in Twizo compared to the original [Zotero in PortableApps.com Format](https://github.com/pedrom34/ZoteroPortable-dev-repo/) are not the responsibility of the author of the base version ([pedrom32](https://github.com/pedrom34)).
+
