@@ -1,0 +1,93 @@
+
+/* These settings will apply to all visible items in the main window */
+#main-window {
+  
+  /* Standard font settings */
+  font-size:15px !important;
+  font-family: 'Univers Next W02','Arial','Helvetica','sans-serif' !important;
+  color: #1e2328 !important;
+
+  /* Color definitions */
+  --inverted-bg-color: rgb(30, 35, 40);
+  --secondary-bg-color: #5a5e62;
+  --primary-bg-color: #FFFFFF;
+  --primary-text-color: #1e2328;
+  --selected-text-color: #FF8A38;
+  --emphasis-text-color: #10A000;
+  --secondary-text-color: #EEEEEE;
+}
+
+/* top menubar (File, Edit, View, etc.) */
+#menubar-items {
+  background-color: var(--secondary-bg-color) !important;
+  color: var(--secondary-text-color) !important;
+  font-weight: bolder !important;
+}
+
+/* The Zotero logo in the top left corner */
+#titlebar-icon {
+  background-color: var(--secondary-bg-color) !important;
+  color: var(--secondary-text-color) !important;
+}
+
+/* The row that is currently selected -- for the main list of items and also the collections pane */
+.row.selected.focused {
+  color: var(--selected-text-color) !important;
+  font-weight: bolder !important;
+}
+
+/* specific styles for the collections pane */
+[id^=collection-tree-row] {
+  font-variant: small-caps !important;
+  color: var(--primary-text-color) !important;
+
+/* for a selection in the collections pane */
+}
+[id ^= collection-tree-row].selected {
+  color: var(--selected-text-color) !important;
+}
+
+/* Main item list */
+#item-tree-main-default > .virtualized-table-body {
+  background-image: url("twizo_logo_base.png");
+  background-repeat: no-repeat;
+  /* position the bg image in the bottom right, but don't use right/bottom as it'll put it on the edge. Instead, use percentage values to position it -almost- entirely bottom, and -almost- entirely right. */
+  background-position: 90% 90%;
+  background-size: 20%;
+  
+
+}
+
+
+/* main settings for the column headers for the main item list */
+#item-tree-main-default > .virtualized-table-header {
+  background-color: var(--inverted-bg-color) !important;
+  color: var(--secondary-text-color) !important;
+  font-variant: small-caps !important;
+  fill: var(--inverted-bg-color) !important;
+
+}
+
+/* individual column headers for the main item list */
+
+#item-tree-main-default > .virtualized-table-header > .label {
+  background-color: var(--inverted-bg-color);
+  color: var(--secondary-text-color);
+  font-variant: small-caps !important;
+  border: "0px none rgb(30, 35, 40)" !important;
+  fill: var(--inverted-bg-color) !important;
+}
+
+
+/* + hovering over the column headers */
+.virtualized-table-header > .cell:hover {
+  color: var(--primary-text-color);
+}
+
+/* The main title for an item in the details pane */
+#zotero-item-pane-header {
+  font-variant: small-caps !important;
+  font-size: 1.5em !important;
+  color: var(--primary-text-color) !important;
+
+}
